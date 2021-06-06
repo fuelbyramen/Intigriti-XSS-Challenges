@@ -124,19 +124,22 @@ Let's try to build with the characters we have an `alert`:
 Lets test it in the developer console and run it trough eval just in case:
 ![IMG4](IMG4.png)
 
-Nice this seems that we can work with this. 
+Nice! Seems like we can work with this. 
 At this point I wasn't quite sure how I could execute arbitrary JavaScript or if I would even succeed in it. 
 So I did a little bit more googling. After reading the following articles:
 
-- https://techiavellian.com/constructing-an-xss-vector-using-no-letters
 - https://portswigger.net/research/executing-non-alphanumeric-javascript-without-parenthesis
+
+This article was shared to me by my colleauge:
+
+- https://techiavellian.com/constructing-an-xss-vector-using-no-letters
 
 I came to the conclusion that I probably want my payload to looks something like the following: 
 ```
 ["sub"]["constructor"]`$${alert`1`}$````
 ```
 
-Oh boy, I didn't know my payload was naively constructed at this point. 
+Oh boy, I didn't know my payload was naively constructed at this point. Well I tried and failed.
 
 So I took some steps back and tested only the following input in the developer console: 
 
