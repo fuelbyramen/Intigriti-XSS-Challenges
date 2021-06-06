@@ -130,7 +130,7 @@ So I did a little bit more googling. After reading the following articles:
 
 - https://portswigger.net/research/executing-non-alphanumeric-javascript-without-parenthesis
 
-This article was shared to me by my colleauge:
+And the following article was shared to me by one of my best colleauge <3:
 
 - https://techiavellian.com/constructing-an-xss-vector-using-no-letters
 
