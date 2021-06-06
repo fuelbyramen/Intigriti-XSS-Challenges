@@ -27,7 +27,7 @@ Looking at the web page we can see that there is captcha challenge saying: **Sol
 Further inspecting the page we can see that this captcha is actually an iframe from a secondary page on the domain: 
 
 #### IMG 1
-{414850}
+![IMG_1](IMG1_1.png)
 
 Accessing the **/captcha.php** page and viewing its source code: 
 
