@@ -224,13 +224,13 @@ The final payload:
 
 ## Final poc #
 
-Now we can deliver the payload to victim in conjuction in a clickjacking vulnerability because the **/captcha.php** page is frameable by any domain and we can append arbitrary parameter input via the `GET` request. I used burps clickbandit to generate the final payload see attached HTML for final payload.
+Now we can deliver the payload to a victim in conjuction in a clickjacking vulnerability because the **/captcha.php** page is frameable by any domain and we can append arbitrary parameter input via the `GET` request. I used burps clickbandit to generate the final payload see repo page for final payload.
 
 
 ## Thoughts #
 This was a fun challenge and I'm quite happy that I managed to solve it. 
 
-Also i realize there is some optimization to my payload, but i was lazy and too scared that I will break something by modifying it. 
+Also i realize there is some optimization to my payload, but i was too lazy and too scared that I will break something by modifying it. 
 
 
 ## Supporting Material #
