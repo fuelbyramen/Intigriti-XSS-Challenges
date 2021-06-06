@@ -32,7 +32,7 @@ Further inspecting the page we can see that this captcha is actually an iframe f
 Accessing the **/captcha.php** page and viewing its source code: 
 
 #### IMG 2
-{47924}
+![IMG_6](IMG6png.png)
 
 So the page has a simple form and some javascript to handle the input, the most notable function is the `function calc()`, because it contains the `eval()` function and this tells us, that this is probably where we want our payload to end up. 
 
@@ -53,12 +53,12 @@ Also because of the comment in the code, which states that the `e` letter is all
 ## Testing functionalities (small steps) #
 Using the application as intended would have us solve a simple mathematical problem, where we have to deduct the given value in variable `a` from the result variable `d` and the sum would be the answer to the question. 
 #### IMG 3 
-{113223}
+![IMG_7](IMG7.png)
 
 Checking if we can modify the fields with a `GET` request by adding the parameters `b` and `c` to the request: 
 
 #### IMG 4
-{807322}
+![IMG](IMG1.png)
 
 Great so our `GET` request with the parameter values was added to the page. This might be usable for crafting the final exploit. 
 
@@ -98,7 +98,7 @@ But there might be a problem, the above example uses the characters`!()`, which 
 But this might be something we could use still and we try to if the character `!` is redundant in our case because we can access the progress bar with the id `e`. Let's explore this idea and fire up the developer console on the challenge **/captcha.php** -page:
 
 #### IMG 5
-{188110}
+![IMG_2](IMG2.png)
 
 So what's happening in the image above?
 
@@ -113,7 +113,7 @@ After all of that shenanigans we can start thinking of how we can craft an explo
 So we already have access to a quite nice range of characters but we are still missing some of them, and one of the most important one is `a`. Luckily we can get an `a` character from JavaScripts "Not a Number" or "NaN". 
 
 #### IMG 6
-{586452}
+![IMG_3](IMG3.png)
 
 Let's try to build with the characters we have an `alert`: 
 
@@ -122,7 +122,7 @@ Let's try to build with the characters we have an `alert`:
 [e+``, e-1+``][1][1]+[e+``, e-1+``][0][21]+[e+``, e-1+``][0][22]+[e+``, e-1+``][0][16]+[e+``, e-1+``][0][26]
 ```
 Lets test it in the developer console and run it trough eval just in case:
-{249377}
+![IMG4](IMG4.png)
 
 Nice this seems that we can work with this. 
 At this point I wasn't quite sure how I could execute arbitrary JavaScript or if I would even succeed in it. 
@@ -152,7 +152,7 @@ Ok it seems that it's evaluated at some level. So just to be sure this would wor
 [[e+``, e-1+``][0][19]+[e+``, e-1+``, [][[]]+``][2][0]+[e+``, e-1+``][0][2]][[e+``, e-1+``][0][5]+[e+``, e-1+``][0][1]+[e+``, e-1+``, [][[]]+``][2][1]+[e+``, e-1+``][0][19]+[e+``, e-1+``][0][6]+[e+``, e-1+``][0][16]+[e+``, e-1+``, [][[]]+``][2][0]+[e+``, e-1+``][0][5]+[e+``, e-1+``][0][26]+[e+``, e-1+``][0][1]+[e+``, e-1+``][0][16]]
 
 ```
-{151731}
+![IMG5](IMG5.png)
 
 Nice! This was another win for us ! Now we have confirmed that we are on the right path. So re reading the the article by the great @Gareth Heyes I realized that my payload was all a bit short handed. 
 
