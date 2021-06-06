@@ -95,7 +95,7 @@ Now because we are able to use the following characters ```[]1234567890+-```we m
 
 But there might be a problem, the above example uses the characters`!()`, which are filtered by the regex before passing it to the `eval()`. 
 
-But this might be something we could use still and we try to if the character `!` is redundant in our case because we can access the progress bar with the id `e`. Let's explore this idea and fire up the developer console on the challenge **/captcha.php** -page:
+But this might be something we could use still and we try to see if the character `!` is redundant in our case because we can access the progress bar with the id `e`. Let's explore this idea and fire up the developer console on the challenge **/captcha.php** -page:
 
 #### IMG 5
 ![IMG_2](IMG2.png)
