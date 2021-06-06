@@ -154,7 +154,7 @@ Ok it seems that it's evaluated at some level. So just to be sure this would wor
 ```
 ![IMG5](IMG5.png)
 
-Nice! This was another win for us ! Now we have confirmed that we are on the right path. So re reading the the article by the great @Gareth Heyes I realized that my payload was all a bit short handed. 
+Nice! This was another win for us ! Now we have confirmed that we are on the right path. So rereading the article by the great @Gareth Heyes I realized that my payload was all a bit short handed. 
 
 The real payload I wanted was: 
 ```
@@ -225,11 +225,10 @@ Now we can deliver the payload to victim in conjuction in a clickjacking vulnera
 
 
 ## Thoughts #
-This was a fun challenge and I'm quite happy that I managed to solve it. I'd like to use this report as my write up and would like to get some feedback on it. 
+This was a fun challenge and I'm quite happy that I managed to solve it. 
 
 Also i realize there is some optimization to my payload, but i was lazy and too scared that I will break something by modifying it. 
 
-Thanks for the challenge! Good night!
 
 ## Supporting Material #
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals [0]
