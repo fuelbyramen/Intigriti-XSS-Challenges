@@ -1,9 +1,9 @@
 # Curious case of esoteric functionality in JavaScript #
 
 ## Intro #
-Intigriti hosts monthly(?) a Cross-Site Scripting (XSS) challenge for hackers, that are curious and want to do a CTF like challenges related to javascript. These challenges range from medium to extremely hard. This month or to be more precise last months challenge was crafted by GrumpinouT as part of bachelor thesis, which intrigued my curiosity. I'd very much like to read it!
+Intigriti hosts monthly(?) a Cross-Site Scripting (XSS) challenge for hackers, that are curious and want to do a CTF like challenges related to javascript. These challenges range from medium to extremely hard. This month or to be more precise last months challenge was crafted by GrumpinouT as part of a bachelor thesis, which intrigued my curiosity.
 
-Anyways I've recently felt the need to improve my Cross-Site Scripting skills and I've found that intigriti's challenges are hard and interesting and althought I've not managed to solve few of them due to the lack of time I have to spend on them, I've always managed to gain more insight on JavaScript and different Cross-Site Scripting (XSS) vectors. 
+Anyways I've recently felt the need to improve my Cross-Site Scripting skills and I've found that intigriti's challenges are hard and interesting and althought I've not managed to solve a few of them due to the lack of time I have to spend on them, I've always managed to gain more insight on JavaScript and different Cross-Site Scripting (XSS) vectors. 
 
 Enough on my blabbering and let's get into the challenge and how I managed to solve it.
 
@@ -231,6 +231,9 @@ Now we can deliver the payload to a victim in conjuction in a clickjacking vulne
 This was a fun challenge and I'm quite happy that I managed to solve it. 
 
 Also i realize there is some optimization to my payload, but i was too lazy and too scared that I will break something by modifying it. 
+
+The best for the last, a big shoutout to my colleauge who has similar interests with me and his input and thoughts were very valuable on this challenge. 
+Thanks buddy, you're the best!
 
 
 ## Supporting Material #
