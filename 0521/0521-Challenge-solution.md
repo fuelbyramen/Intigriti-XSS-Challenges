@@ -217,7 +217,7 @@ The final payload:
 ```
 
 #### Final payload in action
-![Final payload](0521/Final_payload.png)
+![Final payload](Final_payload.png)
 
 ## Final poc #
 
