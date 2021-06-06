@@ -102,11 +102,11 @@ But this might be something we could use still and we try to see if the characte
 
 So what's happening in the image above?
 
-We access the `e`variable and insert it to list with `[e]`, after that we need to convert it to a string with the backticks ``` [e]+`` ```, this is a quite weird feature in JavaScript to be able to concatenate strings and objects together. 
+We access the `e`variable and insert it to a list with `[e]`, after that we need to convert it to a string with the backticks ``` [e]+`` ```, this is a quite weird feature in JavaScript to be able to concatenate strings and objects together. 
 
-Now we've managed to get a nice long string, but we still need to have the possibility to a single string at the time. We can achieve this by adding the string into a list ``` [[e]+``] ``` and slicing from there by selecting the first item in the list and the character we want ``` [[e]+``][0][0] ```. 
+Now we've managed to get a nice long string, but we still need to have the possibility to add a single string at the time. We can achieve this by adding the string into a list ``` [[e]+``] ``` and slicing from there by selecting the first item in the list and the character we want, for example the following get's the first character: ``` [[e]+``][0][0] ```. 
 
-After all of that shenanigans we can start thinking of how we can craft an exploit to abuse the `eval()`.
+After all of that shenanigans we can start thinking of how we can craft an exploit to abuse the `eval()` -function.
 
 ## Crafting exploit
 
