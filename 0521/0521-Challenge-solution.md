@@ -237,7 +237,7 @@ Thanks buddy, you're the best!
 
 
 ## Supporting Material #
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals [0]
-https://github.com/denysdovhan/wtfjs#its-a-fail [1]
-https://techiavellian.com/constructing-an-xss-vector-using-no-letters[2]
-https://portswigger.net/research/executing-non-alphanumeric-javascript-without-parenthesis [3]
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals [0]
+- https://github.com/denysdovhan/wtfjs#its-a-fail [1]
+- https://techiavellian.com/constructing-an-xss-vector-using-no-letters [2]
+- https://portswigger.net/research/executing-non-alphanumeric-javascript-without-parenthesis [3]
